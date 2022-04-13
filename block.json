@@ -1,0 +1,123 @@
+{
+	"apiVersion": 2,
+	"name": "fourmi-e/conteneur-bouton",
+	"version": "0.1.0",
+	"title": "Fourmie Conteneur Bouton",
+	"category": "widgets",
+	"icon": "smiley",
+	"description": "Block reprenant le block fourmi-e/conteneur et présentant un bouton-lien.",
+	"supports": {
+		"anchor": true,
+		"html": false,
+		"align": ["wide", "full"]
+	},
+	"textdomain": "fourmie-conteneur-bouton",
+	"parent": ["fourmi-e/segment", "fourmi-e/groupe-conteneur"],
+	"attributes": {
+		"content":{
+			"source": "html"
+		},
+		"url": {
+			"type": "string"
+		},
+		"text":{
+			"type": "string"
+		},
+		"linkTarget": {
+			"type": "string",
+			"source": "attribute",
+			"selector": "a",
+			"attribute": "target"
+		},
+		"rel": {
+			"type": "string",
+			"source": "attribute",
+			"selector": "a",
+			"attribute": "rel"
+		},
+
+		"level":{
+			"enum": ["petit", "moyen", "grand"]
+		},
+		"backgroundColor": {
+			"type": "string"
+		},
+		"backgroundColorClass": {
+			"type": "string"
+		},
+		"colonnage_withResponsive": {
+			"type": "boolean",
+			"default": false
+		},
+		"colonnage_withStart": {
+			"type": "boolean",
+			"default": false
+		},
+		"colonnage_simple": {
+			"type": "integer",
+			"default": 8
+		},
+		"colonnage_simple_start": {
+			"type": "integer",
+			"default": 1
+		},
+		"colonnage_small": {
+			"type": "integer"
+		},
+		"colonnage_medium": {
+			"type": "integer"
+		},
+		"colonnage_large": {
+			"type": "integer"
+		},
+		"colonnage_extraLarge": {
+			"type": "integer"
+		},
+		"colonnage_extraExtraLarge": {
+			"type": "integer"
+		},
+		"colonnage_small_start": {
+			"type": "integer",
+			"default": 1
+		},
+		"colonnage_medium_start": {
+			"type": "integer",
+			"default": 1
+		},
+		"colonnage_large_start": {
+			"type": "integer",
+			"default": 1
+		},
+		"colonnage_extraLarge_start": {
+			"type": "integer",
+			"default": 1
+		},
+		"colonnage_extraExtraLarge_start": {
+			"type": "integer",
+			"default": 1
+		},
+		"colonnage_small_checked": {
+			"type": "boolean",
+			"default": false
+		},
+		"colonnage_medium_checked": {
+			"type": "boolean",
+			"default": false
+		},
+		"colonnage_large_checked": {
+			"type": "boolean",
+			"default": false
+		},
+		"colonnage_extraLarge_checked": {
+			"type": "boolean",
+			"default": false
+		},
+		"colonnage_extraExtraLarge_checked": {
+			"type": "boolean",
+			"default": false
+		}
+	},
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/index.css",
+	"style": "file:./build/style-index.css"
+}
